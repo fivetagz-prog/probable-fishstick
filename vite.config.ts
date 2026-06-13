@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react";
 import { tanstackRouter } from "@tanstack/router-vite-plugin";
 
 export default defineConfig({
-  plugins: [
-    react(),
-    tanstackRouter()
-  ]
+  plugins: [react(), tanstackRouter()],
+  build: {
+    outDir: "dist"
+  }
 });
