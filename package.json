@@ -5,20 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run gen && vite build",
-    "preview": "vite preview",
-    "gen": "tanstack-router generate"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "@tanstack/react-router": "^1.120.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.0",
-    "@tanstack/router-vite-plugin": "^1.120.0",
     "vite": "^5.4.0",
-    "typescript": "^5.5.4",
     "tailwindcss": "^3.4.10",
     "postcss": "^8.4.41",
     "autoprefixer": "^10.4.20"
