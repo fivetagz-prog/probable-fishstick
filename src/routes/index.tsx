@@ -47,8 +47,8 @@ function Index() {
     setLoading(true);
     setErr(null);
     const url = submitted
-      ? `https://scriptblox.com/api/script/search?q=${encodeURIComponent(submitted)}&page=${page}`
-      : `https://scriptblox.com/api/script/fetch?page=${page}`;
+  ? `/api/scripts?q=${encodeURIComponent(submitted)}&page=${page}`
+  : `/api/scripts?page=${page}`;
     fetch(url)
       .then((r) => r.json())
       .then((j) => {
